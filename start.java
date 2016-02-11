@@ -99,7 +99,8 @@ public class start extends JPanel implements ActionListener {
   /** Listens to the radio buttons. */
   public void actionPerformed(ActionEvent e) {
     if(e.getSource() == Next){
-		
+	question1 = new JLabel("What college do you belong to?");
+	
     }
     else
     picture.setIcon(createImageIcon( e.getActionCommand()
