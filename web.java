@@ -2,7 +2,7 @@ import java.applet.*;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
-public class web extends Applet implements ActionListener{
+public class web extends Applet implements Runnable{
 
   /*  public static void main(String[] args) {
         //Schedule a job for the event-dispatching thread:
@@ -20,10 +20,11 @@ public class web extends Applet implements ActionListener{
             }
        // });
   // }
-  public void actionPerformed(ActionEvent ae){
+  //public void actionPerformed(ActionEvent ae){
   
-  }
+  //}
 
+	public void run() { }
 
 
 
