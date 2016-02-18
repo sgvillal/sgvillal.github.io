@@ -18,10 +18,10 @@ import java.awt.Graphics;
 
 /*
  * RadioButtonDemo.java is a 1.4 application that requires these files:
- * images/Bird.gif images/Cat.gif images/Dog.gif images/Rabbit.gif
- * images/Pig.gif
  */
 public class start extends JPanel implements ActionListener {
+  static int question = 0;
+  static boolean flag[] = new boolean[8] ;
   static String arts = "Art";
 
   static String maths = "Math";
@@ -61,12 +61,12 @@ public class start extends JPanel implements ActionListener {
 
 
     //Group the radio buttons.
-   /* ButtonGroup group = new ButtonGroup();
+    ButtonGroup group = new ButtonGroup();
     group.add( art);
     group.add( math);
     group.add( historyButton);
     group.add( englishButton);
-    group.add( scienceButton); */
+    group.add( scienceButton);
 
     //Register a listener for the radio buttons.
      Next.addActionListener(this);
@@ -101,14 +101,20 @@ public class start extends JPanel implements ActionListener {
   /** Listens to the radio buttons. */
   public void actionPerformed(ActionEvent e) {
     if(e.getSource() == Next){
-	question1 = new JLabel("What college do you belong to?");
-	
+	if(question == 0){
+          
+        }	
     }
-    else
+    else{}
     picture.setIcon(createImageIcon( e.getActionCommand()
         + ".jpg"));
-    if(e.getActionCommand() == "Art"){
-	art.setText("Art"); //Example on how to change the text of each question after submit	
+    if(e.getSource() == art && flag[0] == false){
+	art.setText("pciked"); //Example on how to change the text of each question after submit	
+        flag[0] = true;
+    }
+    else if(e.getSource() == art && flag[0] == true){
+        art.setText("Art");
+        
     }
   }
 
@@ -127,7 +133,7 @@ public class start extends JPanel implements ActionListener {
    * Create the GUI and show it. For thread safety, this method should be
    * invoked from the event-dispatching thread.
    */
-  private static void createAndShowGUI() {
+  public static void createAndShowGUI() {
     //Make sure we have nice window decorations.
     JFrame.setDefaultLookAndFeelDecorated(true);
 
@@ -145,7 +151,7 @@ public class start extends JPanel implements ActionListener {
     frame.setVisible(true);
   }
 
-  public static void main(String[] args) {
+ /* public static void main(String[] args) {
     //Schedule a job for the event-dispatching thread:
     //creating and showing this application's GUI.
     javax.swing.SwingUtilities.invokeLater(new Runnable() {
@@ -153,7 +159,7 @@ public class start extends JPanel implements ActionListener {
         createAndShowGUI();
       }
     });
-  }
+  }*/
 }
 
            
