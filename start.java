@@ -13,6 +13,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
+import java.applet.Applet;
+import java.awt.Graphics;
 
 /*
  * RadioButtonDemo.java is a 1.4 application that requires these files:
