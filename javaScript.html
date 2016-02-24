@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+</body>
+</html>
+
+<html>
+<head>
+<script>
+var num = 0;
+function check( browser) {
+    document.getElementById("answer").value=browser;
+}
+function change(questionNumber){
+    var questions = ["What subjects are you most interested in?",
+                     "What age group would you like to work with for these courses?",
+                     "Have you thought about a career in teaching or education?",
+                     "How much time are you willing to dedicate a quarter?",
+                     "What quarter would you be interested in taking a PAL course?"
+                    ];
+    var answers = [["Art","History","Math","English","Science"],
+                   ["Early Childhood","Upper Elementary","Middle School","High School","Any Age"]                           
+                   ,["Yes", "No", "Maybe"],
+                   ["0-10", "10-20", "20-30","30-40","40+"],
+                   ["Fall", "Winter", "Spring"]];
+    var q = ["q1","q2","q3","q4","q5","q6"];
+    var a = ["a1","a2","a3","a4","a5","a6"];
+ 
+    choice.value = choice.value+1;
+      
+    var NumberofAnswers = answers[num].length;
+    var Index = 5;
+    var changer = 5;
+      
+    document.getElementById("q1").checked = false; 
+    document.getElementById("q2").checked = false;
+    document.getElementById("q3").checked = false;
+    document.getElementById("q4").checked = false;
+    document.getElementById("q5").checked = false;
+    document.getElementById("q6").checked = false;
+
+    document.getElementById("demo").innerHTML=questions[num];
+    document.getElementById("a1").innerHTML=answers[num][0];
+    document.getElementById("a2").innerHTML=answers[num][1];
+    document.getElementById("a3").innerHTML=answers[num][2];
+    document.getElementById("a4").innerHTML=answers[num][3];
+    document.getElementById("a5").innerHTML=answers[num][4];
+    document.getElementById('a6').style.display = 'none';
+    document.getElementById('q6').style.display = 'none';
+    for(index = 0; index <= Index-NumberofAnswers; index++){
+      document.getElementById(q[5-index]).style.display = 'none';
+      document.getElementById(a[5-index]).style.display = 'none';      
+    }    
+    num = num + 1;
+}
+function changepic(stage){
+
+    if(num == 0){
+      if(stage == 1)
+          document.getElementById("pic").src = "ERC.jpg" 
+      else if(stage == 2)
+          document.getElementById("pic").src = "Muir.jpg" 
+      else if(stage == 3)
+          document.getElementById("pic").src = "Warren.jpg" 
+      else if(stage == 4)
+          document.getElementById("pic").src = "Sixth.jpg" 
+      else if(stage == 5)
+          document.getElementById("pic").src = "Marshal.jpg" 
+      else if(stage == 6)
+          document.getElementById("pic").src = "Revelle.jpg" 
+    }
+    if(num == 1){
+      if(stage == 1)
+          document.getElementById("pic").src = "Art.jpg" 
+      else if(stage == 2)
+          document.getElementById("pic").src = "History.jpg" 
+      else if(stage == 3)
+          document.getElementById("pic").src = "Math.jpg" 
+      else if(stage == 4)
+          document.getElementById("pic").src = "English.jpg" 
+      else if(stage == 5)
+          document.getElementById("pic").src = "Science.jpg" 
+      else if(stage == 6)
+          document.getElementById("pic").src = "Pal.jpg" 
+    }
+    
+
+}
+</script>
+</head>
+<body>
+<img value="Pal.jpg" src = "Pal.jpg" id="pic" style="width:350px;height:300px;"><br>
+<h3 id="demo">What college do you belong in?</h3>
+<form>
+<input type="radio" name="browser" id = "q1" onclick="changepic(this.value)" value ="1">
+<label for="choice1" id="a1">ERC</label><br>
+
+<input type="radio" name="browser" id = "q2" onclick="changepic(this.value)" value ="2">
+<label for="choice2" id="a2">Muir</label><br>
+
+<input type="radio" name="browser" id = "q3" onclick="changepic(this.value)" value ="3">
+<label for="choice3" id="a3">Warren</label><br>
+
+<input type="radio" name="browser" id = "q4" onclick="changepic(this.value)" value ="4">
+<label for="choice4" id="a4">Sixth</label><br>
+
+<input type="radio" name="browser" id = "q5" onclick="changepic(this.value)" value ="5">
+<label for="choice5" id="a5">Marshal</label><br>
+
+<input type="radio" name="browser" id = "q6" onclick="changepic(this.value)" value ="6">
+<label for="choice6" id="a6">Revelle</label><br>
+
+<input type="reset"/><br>
+<br>
+<button type="button" name = "s" value = "0" id="choice" 
+onclick="change(this.value)">Next</button><br>
+</form>
+</body>
+</html>
+                  
+
