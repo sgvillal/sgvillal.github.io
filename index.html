@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-</body>
-</html>
 
 <html>
 <head>
@@ -23,6 +21,7 @@ function change(questionNumber){
                    ["Fall", "Winter", "Spring"]];
     var q = ["q1","q2","q3","q4","q5","q6"];
     var a = ["a1","a2","a3","a4","a5","a6"];
+    var qp = ["q1.jpg","q2.jpg","q3.jpg","q4.jpg","q5.jpg"];
  
     choice.value = choice.value+1;
       
@@ -30,6 +29,7 @@ function change(questionNumber){
     var Index = 5;
     var changer = 5;
       
+    document.getElementById("pic").src = qp[num]; 
     document.getElementById("q1").checked = false; 
     document.getElementById("q2").checked = false;
     document.getElementById("q3").checked = false;
@@ -81,13 +81,105 @@ function changepic(stage){
       else if(stage == 6)
           document.getElementById("pic").src = "Pal.jpg" 
     }
+    if(num == 2){
+      if(stage == 1)
+          document.getElementById("pic").src = "Early.jpg" 
+      else if(stage == 2)
+          document.getElementById("pic").src = "Elementary.jpg" 
+      else if(stage == 3)
+          document.getElementById("pic").src = "Middle.jpg" 
+      else if(stage == 4)
+          document.getElementById("pic").src = "HighSchool.jpg" 
+      else if(stage == 5)
+          document.getElementById("pic").src = "Any.jpg" 
+      else if(stage == 6)
+          document.getElementById("pic").src = "Pal.jpg" 
+    }
+    if(num == 3){
+      if(stage == 1)
+          document.getElementById("pic").src = "yes.jpg" 
+      else if(stage == 2)
+          document.getElementById("pic").src = "NO.jpg" 
+      else if(stage == 3)
+          document.getElementById("pic").src = "maybe.jpg" 
+      else if(stage == 4)
+          document.getElementById("pic").src = "" 
+      else if(stage == 5)
+          document.getElementById("pic").src = "" 
+      else if(stage == 6)
+          document.getElementById("pic").src = "" 
+    }
+    if(num == 4){
+      if(stage == 1)
+          document.getElementById("pic").src = "0-10.jpg" 
+      else if(stage == 2)
+          document.getElementById("pic").src = "10-20.jpg" 
+      else if(stage == 3)
+          document.getElementById("pic").src = "20-30.jpg" 
+      else if(stage == 4)
+          document.getElementById("pic").src = "" 
+      else if(stage == 5)
+          document.getElementById("pic").src = "" 
+      else if(stage == 6)
+          document.getElementById("pic").src = "" 
+    }
+    if(num == 5){
+      if(stage == 1)
+          document.getElementById("pic").src = "fall.jpg" 
+      else if(stage == 2)
+          document.getElementById("pic").src = "winter.jpg" 
+      else if(stage == 3)
+          document.getElementById("pic").src = "spring.jpg" 
+      else if(stage == 4)
+          document.getElementById("pic").src = "" 
+      else if(stage == 5)
+          document.getElementById("pic").src = "" 
+      else if(stage == 6)
+          document.getElementById("pic").src = "" 
+    }
+
     
 
 }
 </script>
 </head>
-<body>
-<img value="Pal.jpg" src = "Pal.jpg" id="pic" style="width:350px;height:300px;"><br>
+<style>
+header{
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+nav{
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;
+}
+section{
+    width:450px;
+    float:center;
+    margin-left:40px;
+}
+footer{
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+
+</style>
+<body style="background-color:#00ECD4;">
+<header>
+
+<h1>PAL QUIZ SELECTOR</h1>
+</header>
+<div style=" background-color:#B11E3C;margin:0 auto;margin-top:30px;width:500px;height:680px;padding:20px;border-radius:10px;border:10px solid #FFFF99;font-size:120%;">
+<section>
+<img value="Pal.jpg" src = "Pal.jpg" id="pic" style="width:400px;height:350px;"><br>
 <h3 id="demo">What college do you belong in?</h3>
 <form>
 <input type="radio" name="browser" id = "q1" onclick="changepic(this.value)" value ="1">
@@ -112,6 +204,11 @@ function changepic(stage){
 <br>
 <button type="button" name = "s" value = "0" id="choice" 
 onclick="change(this.value)">Next</button><br>
+</section>
+</div>
+<footer>
+Copyright by PAL
+</footer>
 </form>
 </body>
 </html>
