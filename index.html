@@ -1,81 +1,62 @@
 <!DOCTYPE html>
-
 <html>
-<head>
 
-<SCRIPT  id= "sorce" SRC="javas.js">
-document.getElementById('sorce').innerHTML = "";
-</SCRIPT>
-</script>
-</head>
-<style>
-header{
-    background-color:black;
-    color:white;
-    text-align:center;
-    padding:5px;
-}
-nav{
-    line-height:30px;
-    background-color:#eeeeee;
-    height:300px;
-    width:100px;
-    float:left;
-    padding:5px;
-}
-section{
-    width:450px;
-    float:center;
-    margin-left:40px;
-}
-footer{
-    background-color:black;
-    color:white;
-    clear:both;
-    text-align:center;
-    padding:5px;
-}
+  <head>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
 
-</style>
-<body style="background-color:#00ECD4;">
-<header>
+  <body>
+    <div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <li><a href="http://palprogram.ucsd.edu/">Home</a></li>
+          <li><a href="http://palprogram.ucsd.edu/courses.html">Course Listing</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="http://palprogram.ucsd.edu/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
 
-<h1>PAL QUIZ SELECTOR</h1>
-</header>
-<div style=" background-color:#B11E3C;margin:0 auto;margin-top:30px;width:500px;height:680px;padding:20px;border-radius:10px;border:10px solid #FFFF99;font-size:120%;">
-<section>
-<img value="Pal.jpg" src = "Pal.jpg" id="pic" style="width:400px;height:350px;"><br>
-<h3 id="demo">What college do you belong in?</h3>
-<form>
-<input type="radio" name="browser" id = "q1" onclick="changepic(this.value)" value ="1">
-<label for="choice1" id="a1">ERC</label><br>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Find the class for you.</h1>
+        <p>Take our quiz today!</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+ 
+    <div class="course-guides">
+      <div class="container">
+        <h2>Course Guides</h2>
+        <p>Not sure which class to take? We've created course guides for the classes in the PAL program.</p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="http://palprogram.ucsd.edu/images/slide1.jpg">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="http://palprogram.ucsd.edu/images/slide3.jpg">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="http://palprogram.ucsd.edu/images/slide4.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<input type="radio" name="browser" id = "q2" onclick="changepic(this.value)" value ="2">
-<label for="choice2" id="a2">Muir</label><br>
-
-<input type="radio" name="browser" id = "q3" onclick="changepic(this.value)" value ="3">
-<label for="choice3" id="a3">Warren</label><br>
-
-<input type="radio" name="browser" id = "q4" onclick="changepic(this.value)" value ="4">
-<label for="choice4" id="a4">Sixth</label><br>
-
-<input type="radio" name="browser" id = "q5" onclick="changepic(this.value)" value ="5">
-<label for="choice5" id="a5">Marshal</label><br>
-
-<input type="radio" name="browser" id = "q6" onclick="changepic(this.value)" value ="6">
-<label for="choice6" id="a6">Revelle</label><br>
-
-<input type="reset"/><br>
-<br>
-<button type="button" name = "s" value = "0" id="choice" 
-onclick="change(this.value)">Next</button><br>
-</section>
-</div>
-<footer>
-Copyright by PAL
-</footer>
-</form>
-</body>
+    <div class="copyright">
+      <div class="container">
+        <p>&copy University of California, San Diego 2016</p>
+      </div>
+    </div>
+  </body>
 </html>
-                  
 
