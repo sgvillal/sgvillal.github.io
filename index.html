@@ -18,12 +18,13 @@ header{
 nav{
     line-height:30px;
     background-color:#eeeeee;
-    height:500px;
-    width:100px;
+    height:100%;
+    width:100%;
     padding:5px;
 }
 section{
-    width:0 auto;
+    width:100%;
+    height: 100%;
     margin-left:40px;
 }
 
@@ -33,9 +34,10 @@ footer{
     clear:both;
     text-align:center;
     padding:5px;
+    position: absolute;
 }
 button {
-  width: 200px;
+  width: 40%;
   padding: 15px 15px;
   font-size: 18px;
   text-align: center;
@@ -85,7 +87,7 @@ button:hover span:after {
 <h1>PAL QUIZ SELECTOR</h1>
 </header>
 <section>
-<nav style ="float:left; margin:0 auto; margin-top:30px;width:300px;height:600px;padding:20px;border-radius:10px;border:10px solid #FFFF99; font-size:150%;">
+<nav style ="float:left; margin:0 auto; margin-top:30px;width:20%;height:100%;padding:20px;border-radius:10px;border:10px solid #FFFF99; font-size:150%;">
  <p>To see your Result in Advance Click on result Button<p><br>
  <label id="result"></label><br>
  <label id= "recomendation"></label><br>
@@ -94,8 +96,8 @@ button:hover span:after {
  <br>
  <button type="button" id="reset" onclick="start(this.value)" value = "1">Reset</button> 
 </nav>
-<div style=" background-color:#B11E3C;margin:0 auto;float:center; margin-top:30px;width:500px;height:680px;padding:20px;border-radius:10px;border:10px solid #FFFF99;font-size:120%;">
-<img value="Pal.jpg" src = "Pal.jpg" id="pic" style="width:400px;height:350px;margin-left:40px;"><br>
+<div style=" background-color:#B11E3C;margin:0 auto;float:center; margin-top:30px;width:30%;height:100%;padding:20px;border-radius:10px;border:10px solid #FFFF99;font-size:120%;">
+<img value="Pal.jpg" src = "Pal.jpg" id="pic" style="width:80%;height:350px;margin-left:40px;"><br>
 <h3 id="demo">What college are you in?</h3>
 <form>
 <input type="radio" name="browser" id = "q1" onclick="changepic(this.value)" value ="1">
