@@ -1,20 +1,4 @@
-<style>
-a:link{
-   color: green;
-   background-color: transparent;
-   text-decoration: none;
-}
-a:visited{
-   color:green;
-   background-color:transparent;
-   text-decoration: none;
-}
-a:hover{
-   color: red;
-   background-color:transparent;
-   text-decoration: underline;
-}
-</style>
+
 .nav a {
   color: #5a5a5a;
   font-size: 11px;
