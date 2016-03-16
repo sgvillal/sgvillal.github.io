@@ -2,7 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b968f89-0703-48a7-b99f-5a344bf62929" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yes.jpg" afterPath="$PROJECT_DIR$/yes.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/0-10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/10-20-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/10-20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/20-30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Any.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Any1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Art.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ERC.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Early.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Early1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Elementary.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Elementery.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/English.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HighSchool.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/History.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Marshal.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Marshal1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Math.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Middle.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Muir.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/NO.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/Pal1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pal.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Revelle.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Science.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sixth.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Social.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Visual.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Warren.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fall.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/maybe.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/q1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/q2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/q3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/q4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/q5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/q6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spring.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/thankyou.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/winter.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/yes.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index3.html" afterPath="$PROJECT_DIR$/index3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javas.js" afterPath="$PROJECT_DIR$/javas.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sgvillal.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +66,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="index3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.4917762">
-              <caret line="101" column="6" selection-start-line="101" selection-start-column="6" selection-end-line="101" selection-end-column="6" />
+            <state vertical-scroll-proportion="-6.627451">
+              <caret line="102" column="68" selection-start-line="102" selection-start-column="68" selection-end-line="102" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="javas.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javas.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3322785">
+              <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -43,6 +96,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.0">
+              <caret line="51" column="68" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -51,6 +114,15 @@
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/index3.html" />
+        <option value="$PROJECT_DIR$/javas.js" />
+      </list>
     </option>
   </component>
   <component name="NamedScopeManager">
@@ -256,8 +328,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.4917762">
-          <caret line="101" column="6" selection-start-line="101" selection-start-column="6" selection-end-line="101" selection-end-column="6" />
+        <state vertical-scroll-proportion="-15.0">
+          <caret line="51" column="68" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.627451">
+          <caret line="102" column="68" selection-start-line="102" selection-start-column="68" selection-end-line="102" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3322785">
+          <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
           <folding />
         </state>
       </provider>

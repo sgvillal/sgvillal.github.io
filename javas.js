@@ -42,7 +42,7 @@ function start(){
       document.getElementById(q[index]).style.visibility = 'visible';
       document.getElementById(a[index]).style.visibility = 'visible';      
     }    
-    document.getElementById("pic").src = "Pal.jpg";
+    document.getElementById("pic").src = "pics/Pal.jpg";
     document.getElementById("q1").checked = false; 
     document.getElementById("q2").checked = false;
     document.getElementById("q3").checked = false;
@@ -86,7 +86,7 @@ function change(questionNumber){
     }
     var q = ["q1","q2","q3","q4","q5","q6"];
     var a = ["a1","a2","a3","a4","a5","a6"];
-    var qp = ["q1.jpg","q2.jpg","q3.jpg","q4.jpg","q5.jpg","q6.jpg"];
+    var qp = ["pics/q1.jpg","pics/q2.jpg","pics/q3.jpg","pics/q4.jpg","pics/q5.jpg","pics/q6.jpg"];
     choice.value = choice.value+1;
     if(num<6) 
     	var NumberofAnswers = answers[num].length;
@@ -132,23 +132,23 @@ function changepic(stage){
     choice = stage;
     if(num == 0){
       if(stage == 1)
-          document.getElementById("pic").src = "ERC.jpg" 
+          document.getElementById("pic").src = "pics/ERC.jpg"
       else if(stage == 2)
-          document.getElementById("pic").src = "Muir.jpg" 
+          document.getElementById("pic").src = "pics/Muir.jpg"
       else if(stage == 3)
-          document.getElementById("pic").src = "Warren.jpg" 
+          document.getElementById("pic").src = "pics/Warren.jpg"
       else if(stage == 4)
-          document.getElementById("pic").src = "Sixth.jpg" 
+          document.getElementById("pic").src = "pics/Sixth.jpg"
       else if(stage == 5)
-          document.getElementById("pic").src = "Marshal.jpg" 
+          document.getElementById("pic").src = "pics/Marshal.jpg"
       else if(stage == 6)
-          document.getElementById("pic").src = "Revelle.jpg" 
+          document.getElementById("pic").src = "pics/Revelle.jpg"
     }
     if(num == 1){
       if(stage == 1)
-          document.getElementById("pic").src = "yes.jpg" 
+          document.getElementById("pic").src = "pics/yes.jpg"
       else if(stage == 2)
-          document.getElementById("pic").src = "NO.jpg" 
+          document.getElementById("pic").src = "pics/NO.jpg"
       else if(stage == 3)
           document.getElementById("pic").src = "" 
       else if(stage == 4)
@@ -160,9 +160,9 @@ function changepic(stage){
     }
     if(num == 2){
       if(stage == 1)
-          document.getElementById("pic").src = "yes.jpg" 
+          document.getElementById("pic").src = "pics/yes.jpg"
       else if(stage == 2)
-          document.getElementById("pic").src = "NO.jpg" 
+          document.getElementById("pic").src = "pics/NO.jpg"
       else if(stage == 3)
           document.getElementById("pic").src = "" 
       else if(stage == 4)
@@ -174,9 +174,9 @@ function changepic(stage){
     }
     if(num == 3){
       if(stage == 1)
-          document.getElementById("pic").src = "yes.jpg" 
+          document.getElementById("pic").src = "pics/yes.jpg"
       else if(stage == 2)
-          document.getElementById("pic").src = "NO.jpg" 
+          document.getElementById("pic").src = "pics/NO.jpg"
       else if(stage == 3)
           document.getElementById("pic").src = "" 
       else if(stage == 4)
@@ -188,13 +188,13 @@ function changepic(stage){
     }
     if(num == 4){
       if(stage == 1)
-          document.getElementById("pic").src = "Science.jpg" 
+          document.getElementById("pic").src = "pics/Science.jpg"
       else if(stage == 2)
-          document.getElementById("pic").src = "Math.jpg" 
+          document.getElementById("pic").src = "pics/Math.jpg"
       else if(stage == 3)
-          document.getElementById("pic").src = "Social.jpg" 
+          document.getElementById("pic").src = "pics/Social.jpg"
       else if(stage == 4)
-          document.getElementById("pic").src = "Visual.jpg" 
+          document.getElementById("pic").src = "pics/Visual.jpg"
       else if(stage == 5)
           document.getElementById("pic").src = "" 
       else if(stage == 6)
@@ -202,23 +202,23 @@ function changepic(stage){
     }
     if(num == 5){
       if(stage == 1)
-          document.getElementById("pic").src = "Early.jpg" 
+          document.getElementById("pic").src = "pics/Early.jpg"
       else if(stage == 2)
-          document.getElementById("pic").src = "Elementary.jpg" 
+          document.getElementById("pic").src = "pics/Elementary.jpg"
       else if(stage == 3)
-          document.getElementById("pic").src = "Middle.jpg" 
+          document.getElementById("pic").src = "pics/Middle.jpg"
       else if(stage == 4)
-          document.getElementById("pic").src = "HighSchool.jpg" 
+          document.getElementById("pic").src = "pics/HighSchool.jpg"
       else if(stage == 5)
-          document.getElementById("pic").src = "Any.jpg" 
+          document.getElementById("pic").src = "pics/Any.jpg"
       else if(stage == 6)
           document.getElementById("pic").src = "" 
     }    
     if(num == 6){
       if(stage == 1)
-          document.getElementById("pic").src = "yes.jpg" 
+          document.getElementById("pic").src = "pics/yes.jpg"
       else if(stage == 2)
-          document.getElementById("pic").src = "NO.jpg" 
+          document.getElementById("pic").src = "pics/NO.jpg"
       else if(stage == 3)
           document.getElementById("pic").src = "" 
       else if(stage == 4)
@@ -229,7 +229,7 @@ function changepic(stage){
           document.getElementById("pic").src = "" 
     }
     if(num > 6){
-      documnet.getElementById("pic").src = "Pal.jpg"
+      documnet.getElementById("pic").src = "pics/Pal.jpg"
     }    
 
 }
@@ -495,7 +495,7 @@ function calculate(command){
 function finalpage(){    
     var q = ["q1","q2","q3","q4","q5","q6"];
     var a = ["a1","a2","a3","a4","a5","a6"];
-      document.getElementById("pic").src = "thankyou.jpg";
+      document.getElementById("pic").src = "pics/thankyou.jpg";
       document.getElementById("demo").style.visibility = 'hidden';
       document.getElementById("choice").style.visibility = 'hidden';
       document.getElementById("back").style.visibility = 'hidden';
