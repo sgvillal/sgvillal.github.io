@@ -148,7 +148,7 @@ function changepic(stage){
       if(stage == 1)
           document.getElementById("pic").src = "pics/yes.jpg"
       else if(stage == 2)
-          document.getElementById("pic").src = "pics/NO.jpg"
+          document.getElementById("pic").src = "pics/No.jpg"
       else if(stage == 3)
           document.getElementById("pic").src = "" 
       else if(stage == 4)
@@ -162,7 +162,7 @@ function changepic(stage){
       if(stage == 1)
           document.getElementById("pic").src = "pics/yes.jpg"
       else if(stage == 2)
-          document.getElementById("pic").src = "pics/NO.jpg"
+          document.getElementById("pic").src = "pics/No.jpg"
       else if(stage == 3)
           document.getElementById("pic").src = "" 
       else if(stage == 4)
@@ -176,7 +176,7 @@ function changepic(stage){
       if(stage == 1)
           document.getElementById("pic").src = "pics/yes.jpg"
       else if(stage == 2)
-          document.getElementById("pic").src = "pics/NO.jpg"
+          document.getElementById("pic").src = "pics/No.jpg"
       else if(stage == 3)
           document.getElementById("pic").src = "" 
       else if(stage == 4)
@@ -218,7 +218,7 @@ function changepic(stage){
       if(stage == 1)
           document.getElementById("pic").src = "pics/yes.jpg"
       else if(stage == 2)
-          document.getElementById("pic").src = "pics/NO.jpg"
+          document.getElementById("pic").src = "pics/No.jpg"
       else if(stage == 3)
           document.getElementById("pic").src = "" 
       else if(stage == 4)
