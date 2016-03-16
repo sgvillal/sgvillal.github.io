@@ -1,6 +1,36 @@
+@font-face { font-family: Adam; src: url('Fonts/Adam.otf'); }
+@font-face { font-family: Bakery; src: url('Fonts/bakery.otf'); }
+@font-face { font-family: BasicTitle; src: url('Fonts/basictitlefont.ttf'); }
+@font-face { font-family: Bromello; src: url('Fonts/bromello.otf'); }
+@font-face { font-family: ChasingEmbers; src: url('Fonts/chasingembers.otf'); }
+@font-face { font-family: HickoryJack; src: url('Fonts/HickoryJack.ttf'); }
+@font-face { font-family: LemonMilk; src: url('Fonts/LemonMilk.otf'); }
+@font-face { font-family: Lobster; src: url('Fonts/Lobster.otf'); }
+@font-face { font-family: MagnoliaSky; src: url('Fonts/magnolia_sky.otf'); }
+@font-face { font-family: MasterOfBreak; src: url('Fonts/master_of_break.otf'); }
+@font-face { font-family: Mekar; src: url('Fonts/MekarScript.otf'); }
+@font-face { font-family: MoonFlower; src: url('Fonts/MoonFlower.ttf'); }
+@font-face { font-family: MoonFlower; font-weight: bold; src: url('MoonFlowerBold.ttf');}
+@font-face { font-family: Residual; src: url('Fonts/residual.ttf'); }
+@font-face { font-family: Shorelines; src: url('Fonts/ShorelinesScriptBold.otf'); }
+@font-face { font-family: Riesling; src: url('Fonts/riesling.ttf'); }
+@font-face { font-family: SweetPea; src: url('Fonts/SweetPea_2.ttf'); }
+@font-face { font-family: Walkway; src: url('Fonts/WalkwayCondensedSemiBold.ttf'); }
+@font-face { font-family: Amethyst; src: url('Fonts/Amethyst.ttf'); }
+@font-face { font-family: Promenade; src: url('Fonts/Promenade_de_la_Croisette.ttf'); }
+@font-face { font-family: Intrique; src: url('Fonts/IntriqueScript_PersonalUse.ttf'); }
+@font-face { font-family: SugaryPancake; src: url('Fonts/Sugary_Pancake.ttf'); }
+@font-face { font-family: CashCurrency; src: url('Fonts/CashCurrency.ttf'); }
+@font-face { font-family: Chocoleta; src: url('Fonts/chocoleta.otf'); }
+@font-face { font-family: ClementePDae; src: url('Fonts/ClementePDae-Light.ttf'); }
+@font-face { font-family: FUTRFW; src: url('Fonts/FUTRFW.ttf'); }
+@font-face { font-family: YoungBeautiful; src: url('Fonts/YoungBeautiful.ttf'); }
+@font-face { font-family: ReturnToSender; src: url('Fonts/Return_To_Sender.ttf'); }
+@font-face { font-family: Tulip; src: url('Fonts/Tulip.otf'); }
+
 
 .nav a {
-  color: #5a5a5a;
+  color: #59D0D0;
   font-size: 11px;
   font-weight: bold;
   padding: 14px 10px;
@@ -17,11 +47,15 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: YoungBeautiful;
+
+
 }
 
 .jumbotron .container {
   position: relative;
   top:100px;
+
 }
 .quiz{
   height: 20em;
@@ -37,7 +71,7 @@
 .jumbotron h1 {
   color: #fff;
   font-size: 48px;  
-  font-family: 'Shift', sans-serif;
+  font-family: LemonMilk;
   font-weight: bold;
 }
 

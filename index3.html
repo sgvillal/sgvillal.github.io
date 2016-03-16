@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
 
 <SCRIPT  id= "sorce" SRC="javas.js">
@@ -9,11 +10,16 @@ document.getElementById('sorce').innerHTML = "";
 </script>
 </head>
 <style>
+
+@font-face { font-family: BasicTitle; src: url('Fonts/basictitlefont.ttf'); }
+@font-face { font-family: FUTRFW; src: url('Fonts/FUTRFW.ttf'); }
+
 header{
     background-color:black;
     color:white;
     text-align:center;
     padding:5px;
+    font-family: FUTRFW;
 }
 nav{
     line-height:30px;
@@ -26,6 +32,8 @@ section{
     width:90%;
     height: 90%;
     margin-left:40px;
+    color:white;
+    font-family:BasicTitle;
 }
 
 footer{
@@ -81,22 +89,23 @@ button:hover span:after {
   right: 0;
 }
 </style>
-<body style="background-color:#6CCCCC;">
+</head>
+<body style="background-color:#6CCCC0;">
 <header>
 
-<h1>PAL QUIZ SELECTOR</h1>
+<h1>PAL Quiz Selector</h1>
 </header>
 <section>
-<nav style ="float:left; margin:0 auto; margin-top:30px;width:20%;height:100%;padding:20px;border-radius:10px;border:10px solid #FFFF99; font-size:150%;">
+<nav style ="float:left; margin:0 auto; margin-top:30px;width:20%;height:100%;padding:20px;border-radius:10px;border:10px solid #FDE6A9; font-size:150%;color:black;background-color: #E1F4E9;">
  <p>To see your Result in Advance Click on result Button<p><br>
  <label id="result"></label><br>
  <label id= "recomendation"></label><br>
  <button type="button" onclick="check(0)">Result</button>
  <br>
  <br>
- <button type="button" id="reset" onclick="start(this.value)" value = "1">Reset</button> 
+ <button type="button" id="reset" onclick="start(this.value)" value = "1">Reset</button>
 </nav>
-<div style=" background-color: #1A4A7B;margin:0 auto;float:center; margin-top:30px;width:30%;height:100%;padding:20px;border-radius:10px;border:10px solid #FFFF99;font-size:120%;">
+<div style=" background-color: #007A7A;margin:0 auto;float:center; margin-top:30px;width:30%;height:100%;padding:20px;border-radius:10px;border:10px solid #FDE6A9;font-size:120%;">
 <img value="Pal.jpg" src = "pics/Pal.jpg" id="pic" style="width:100%;height:350px;"><br>
 <h3 id="demo">What college are you in?</h3>
 <form>
