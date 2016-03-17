@@ -106,6 +106,7 @@
 }
 
 .copyright {
+  display: table-row;
   font-family: ClementePDae;
   background-color: #f7f7f7;
   height: 20px;
