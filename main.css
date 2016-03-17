@@ -46,7 +46,7 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: YoungBeautiful;
+  font-family: Riesling;
 }
 
 .jumbotron .container {
@@ -57,7 +57,7 @@
 
 .jumbotron h1 {
   color: #fff;
-  font-family: Riesling;
+  font-family: YoungBeautiful;
   font-size: 48px;
   font-weight: bold;
 }
