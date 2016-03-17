@@ -1,5 +1,4 @@
 @font-face { font-family: Adam; src: url('Fonts/Adam.otf'); }
-@font-face { font-family: Bakery; src: url('Fonts/bakery.otf'); }
 @font-face { font-family: BasicTitle; src: url('Fonts/basictitlefont.ttf'); }
 @font-face { font-family: Bromello; src: url('Fonts/bromello.otf'); }
 @font-face { font-family: ChasingEmbers; src: url('Fonts/chasingembers.otf'); }
@@ -8,7 +7,6 @@
 @font-face { font-family: Lobster; src: url('Fonts/Lobster.otf'); }
 @font-face { font-family: MagnoliaSky; src: url('Fonts/magnolia_sky.otf'); }
 @font-face { font-family: MasterOfBreak; src: url('Fonts/master_of_break.otf'); }
-@font-face { font-family: Mekar; src: url('Fonts/MekarScript.otf'); }
 @font-face { font-family: MoonFlower; src: url('Fonts/MoonFlower.ttf'); }
 @font-face { font-family: MoonFlower; font-weight: bold; src: url('MoonFlowerBold.ttf');}
 @font-face { font-family: Residual; src: url('Fonts/residual.ttf'); }
@@ -48,7 +46,7 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: Mekar;
+  font-family: Chocoleta;
 }
 
 .jumbotron .container {
@@ -59,7 +57,7 @@
 
 .jumbotron h1 {
   color: #fff;
-  font-family: Bakery;
+  font-family: Riesling;
   font-size: 48px;
   font-weight: bold;
 }
