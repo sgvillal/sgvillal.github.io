@@ -59,16 +59,6 @@
   top:100px;
 
 }
-.quiz{
-  height: 20em;
-  width: 100%;
-  font-size: 48px;
-  color: green; 
-  
-  a:hover{
-     background-color: blue;
-  }
-}
 
 .jumbotron h1 {
   color: #fff;
