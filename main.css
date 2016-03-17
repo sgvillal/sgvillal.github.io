@@ -91,7 +91,6 @@
 
 .course-guides h3 {
   position: absolute;
-  display: table-cell;
   text-align: center;
   vertical-align: middle;
   color: #fff;
@@ -102,7 +101,7 @@
 
 .course-guides .thumbnail {
   position: relative;
-  display: table;
+  display: block;
 }
 
 .copyright {
