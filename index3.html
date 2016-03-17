@@ -36,7 +36,9 @@ section{
     color:white;
     font-family: Adam;
 }
-
+container{
+    height: 350px;
+}
 footer{
     background-color:black;
     color:white;
@@ -107,7 +109,9 @@ button:hover span:after {
  <button type="button" id="reset" onclick="start(this.value)" value = "1">Reset</button>
 </nav>
 <div style=" background-color: #007A7A;margin:0 auto;float:center; margin-top:30px;width:30%;height:100%;padding:20px;border-radius:10px;border:10px solid #FDE6A9;font-size:120%;">
-<img value="Pal.jpg" src = "pics/Pal.jpg" id="pic" style="width:100%;height:100%;"><br>
+  <div class="container">
+    <img value="Pal.jpg" src = "pics/Pal.jpg" id="pic"><br>
+  </div>
 <h3 id="demo">What college are you in?</h3>
 <form>
 <input type="radio" name="browser" id = "q1" onclick="changepic(this.value)" value ="1">
