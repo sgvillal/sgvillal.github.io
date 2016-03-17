@@ -83,12 +83,14 @@
 }
 
 .course-guides {
-  background-color: #efefef;
+  background-color: #E1F4E9;
   border-bottom: 1px solid #dbdbdb;
+  font-family: ClementePDae;
 }
 
 .course-guides h2 {
   color: #393c3d;
+  font-family: LemonMilk;
   font-size: 24px;
 }
 
@@ -98,6 +100,7 @@
 }
 
 .copyright {
+  font-family: ClementePDae;
   background-color: #f7f7f7;
   height: 15%
 }
