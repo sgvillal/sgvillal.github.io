@@ -97,7 +97,7 @@
   font-weight: bold;
 }
 
-.course-guides .thumbnail {
+.course-guides a {
   position: relative;
   display: block;
 }
