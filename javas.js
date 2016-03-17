@@ -67,15 +67,20 @@ function start(){
       document.getElementById("demo").style.visibility = 'visible';
       document.getElementById("choice").style.visibility = 'visible';
       document.getElementById("back").style.visibility = 'visible';
+      //document.getElementById("results_comments").style.visibility = 'hidden';
       /* sets up numbers of questions and answers */
     var q = ["q1","q2","q3","q4","q5","q6","q7"];
     var a = ["a1","a2","a3","a4","a5","a6"];
+    var results_comments = ["2"];
     /* Shows questions and answers one by one */
     /* Starts showing question 1 -> 7 */
     for(index = 0; index < QUESTIONS; index++){
       document.getElementById(q[index]).style.visibility = 'visible';
       document.getElementById(a[index]).style.visibility = 'visible';
     }
+
+    //document.getElementById(results_comments[0]).style.visibility = 'visible';
+    //document.getElementById("a6").innerHTML="Because you still need to take your DEI, EDS 130, 131, 136, 137 can cover it!";
 
 
 
@@ -159,8 +164,8 @@ function change(questionNumber){
                      "Have you thought about a career in teaching or education?",
                      "Of the subjects below, which do you enjoy the most?",
                      "What age group would you like to work with for these courses?",
-                     "Are you a 1st or 2nd year?",
-                     "What kind of environment would you prefer?"
+                     "What kind of environment would you prefer?",
+                     "Are you a 1st or 2nd year?"
                     ]; // end of question choices
 
     /* --------------------------------------------------------------- */
@@ -192,8 +197,8 @@ function change(questionNumber){
                    ["YES","NO"],
                    ["Science","Math","Social/Political"," Visual and Performance Arts"],
                    ["Early Childhood","Upper Elementary","Middle School","High School","Any Age"],
-                   ["YES","NO"],
-                   ["A constantly changing environment", "One-on-one, Mentorship", "Early Childhood development (K-3)", "Focusing on one subject area ", "Visual and Performing Arts in the classroom"]
+                   ["A constantly changing environment", "One-on-one, Mentorship", "Early Childhood development (K-3)", "Focusing on one subject area ", "Visual and Performing Arts in the classroom"],
+                   ["YES","NO"]
                    ]; // end of answer choices
     /* --------------------------------------------------------------- */
 
@@ -229,7 +234,7 @@ function change(questionNumber){
     var a = ["a1","a2","a3","a4","a5","a6"];
     /* Holds question pictures, which can be found in the pics file */
     /* CAN ADD/REMOVE QUESTION PICTURES HERE */
-    var qp = ["pics/q1.jpg","pics/q2.jpg","pics/q3.jpg","pics/q4.jpg","pics/q5.jpg","pics/q6.jpg", "pics/q7.jpg"];
+    var qp = ["pics/q1.jpg","pics/q2.jpg","pics/q3.jpg","pics/q4.jpg","pics/q5.jpg","pics/q7.jpg", "pics/q6.jpg"];
     /* --------------------------------------------------------------- */
 
 
@@ -407,7 +412,7 @@ function changepic(stage){
       else if(stage == 6)
           document.getElementById("pic").src = ""
     }
-    if(num == 6){
+    if(num == 7){
       if(stage == 1)
           document.getElementById("pic").src = "pics/yes.jpg"
       else if(stage == 2)
@@ -422,7 +427,7 @@ function changepic(stage){
           document.getElementById("pic").src = ""
     }
 
-    if(num == 7){
+    if(num == 6){
           if(stage == 1)
               document.getElementById("pic").src = "pics/const.jpg"
           else if(stage == 2)
@@ -682,7 +687,48 @@ function calculate(command){
              keep[4][num] = 5;
          }
      }
-    else if(num == 6){
+     else if(num == 6){
+                 if(choice == 1){
+                           keep[0][num] = 5;
+                           keep[1][num] = 0;
+                           keep[2][num] = 0;
+                           keep[3][num] = 0;
+                           keep[4][num] = 0;
+                 }
+                       else if(choice == 2){
+
+                           keep[0][num] = 0;
+                           keep[1][num] = 5;
+                           keep[2][num] = 0;
+                           keep[3][num] = 0;
+                           keep[4][num] = 0;
+                       }
+                       else if(choice == 3){
+
+                           keep[0][num] = 0;
+                           keep[1][num] = 0;
+                           keep[2][num] = 5;
+                           keep[3][num] = 0;
+                           keep[4][num] = 0;
+                       }
+                       else if(choice == 4){
+
+                           keep[0][num] = 0;
+                           keep[1][num] = 0;
+                           keep[2][num] = 0;
+                           keep[3][num] = 5;
+                           keep[4][num] = 0;
+                       }
+                       else if(choice == 5){
+
+                           keep[0][num] = 0;
+                           keep[1][num] = 0;
+                           keep[2][num] = 0;
+                           keep[3][num] = 0;
+                           keep[4][num] = 5;
+                       }
+                 }
+    else if(num == 7){
          if(choice == 1){
 
              keep[0][num] = 5;
@@ -692,8 +738,11 @@ function calculate(command){
              keep[4][num] = 0;
          }
          else if(choice == 2){
+            /* if not a first or second year, EDS39 shouldnt be an option */
+             for(index = 0; index < QUESTIONS; index++){
+                keep[0][index] = 0;
+             }
 
-             keep[0][num] = 0;
              keep[1][num] = 5;
              keep[2][num] = 5;
              keep[3][num] = 5;
@@ -723,48 +772,9 @@ function calculate(command){
              keep[3][num] = 0;
              keep[4][num] = 0;
          }
-         }
 
-         else if(num == 7){
-            if(choice == 1){
-                      keep[0][num] = 5;
-                      keep[1][num] = 0;
-                      keep[2][num] = 0;
-                      keep[3][num] = 0;
-                      keep[4][num] = 0;
-            }
-                  else if(choice == 2){
 
-                      keep[0][num] = 0;
-                      keep[1][num] = 5;
-                      keep[2][num] = 0;
-                      keep[3][num] = 0;
-                      keep[4][num] = 0;
-                  }
-                  else if(choice == 3){
 
-                      keep[0][num] = 0;
-                      keep[1][num] = 0;
-                      keep[2][num] = 5;
-                      keep[3][num] = 0;
-                      keep[4][num] = 0;
-                  }
-                  else if(choice == 4){
-
-                      keep[0][num] = 0;
-                      keep[1][num] = 0;
-                      keep[2][num] = 0;
-                      keep[3][num] = 5;
-                      keep[4][num] = 0;
-                  }
-                  else if(choice == 5){
-
-                      keep[0][num] = 0;
-                      keep[1][num] = 0;
-                      keep[2][num] = 0;
-                      keep[3][num] = 0;
-                      keep[4][num] = 5;
-                  }
                   /* --------------------------------------------------------------- */
                        /*
                                                __|_|_|     _|_|_|_|     _|
@@ -804,7 +814,9 @@ function finalpage(){
       document.getElementById("demo").style.visibility = 'hidden';
       document.getElementById("choice").style.visibility = 'hidden';
       document.getElementById("back").style.visibility = 'hidden';
-      for(index = 0; index < 6; index++){
+      //document.getElementById(results_comments).style.visibility = 'visible';
+
+      for(index = 0; index < QUESTIONS; index++){
       	document.getElementById(q[index]).style.visibility = 'hidden';
       	document.getElementById(a[index]).style.visibility = 'hidden';
       }
