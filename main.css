@@ -28,6 +28,10 @@
 @font-face { font-family: ReturnToSender; src: url('Fonts/Return_To_Sender.ttf'); }
 @font-face { font-family: Tulip; src: url('Fonts/Tulip.otf'); }
 
+.head {
+  font-family: LemonMilk; src: url('Fonts/LemonMilk.otf');
+  font-family: ClementePDae; src: url('Fonts/ClementePDae-Light.ttf');
+}
 
 .nav a {
   color: #59D0D0;
@@ -48,8 +52,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   font-family: YoungBeautiful;
-
-
 }
 
 .jumbotron .container {
