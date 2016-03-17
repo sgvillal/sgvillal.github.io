@@ -89,6 +89,10 @@
   margin-bottom: 13px;
 }
 
+.course-guides .thumbnail {
+  position: relative;
+}
+
 .course-guides h3 {
   text-align: center;
   color: #fff;
