@@ -90,19 +90,14 @@
 }
 
 .course-guides h3 {
+  text-align: center;
   color: #fff;
   font-size: 48px;  
   font-family: 'Shift', sans-serif;
   font-weight: bold;
 }
 
-.course-guides .EDS39 {
-  height: 100px;
-  background-image: url('http://palprogram.ucsd.edu/images/slide1.jpg');
-}
-
 .copyright {
-  margin-bottom: 0;
   font-family: ClementePDae;
   background-color: #f7f7f7;
   height: 20px;
