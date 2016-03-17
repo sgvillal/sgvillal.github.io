@@ -90,8 +90,10 @@
 }
 
 .course-guides h3 {
-  text-align: center;
   position: absolute;
+  display: table;
+  margin: auto;
+  text-align: center;
   color: #fff;
   font-size: 48px;  
   font-family: 'Shift', sans-serif;
