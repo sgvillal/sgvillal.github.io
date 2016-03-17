@@ -85,6 +85,11 @@
   margin-bottom: 13px;
 }
 
+.course-guides a {
+  position: relative;
+  display: block;
+}
+
 .course-guides h3 {
   position: absolute;
   right: 0;
@@ -95,11 +100,6 @@
   font-size: 48px;  
   font-family: 'Shift', sans-serif;
   font-weight: bold;
-}
-
-.course-guides a {
-  position: relative;
-  display: block;
 }
 
 .copyright {
