@@ -30,17 +30,17 @@ var EDS131 = 0;
 var EDS136 = 0;
 var EDS137 = 0;
 var num = 0;
-var keep = [[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]];
+var keep = [[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0]];
 var COURSES = 5;
 var QUESTIONS = 7;
 function check( browser) {
     /* Sets up scoreboard */
     if(num != 0){
-    	EDS39 = keep[0][0]+keep[0][1]+keep[0][2]+keep[0][3]+keep[0][4]+keep[0][5];
-    	EDS130 = keep[1][0]+keep[1][1]+keep[1][2]+keep[1][3]+keep[1][4]+keep[1][5];
-    	EDS131 = keep[2][0]+keep[2][1]+keep[2][2]+keep[2][3]+keep[2][4]+keep[2][5];
-    	EDS136 = keep[3][0]+keep[3][1]+keep[3][2]+keep[3][3]+keep[3][4]+keep[3][5];
-    	EDS137 = keep[4][0]+keep[4][1]+keep[4][2]+keep[4][3]+keep[4][4]+keep[4][5];
+    	EDS39 = keep[0][0]+keep[0][1]+keep[0][2]+keep[0][3]+keep[0][4]+keep[0][5]+keep[0][6];
+    	EDS130 = keep[1][0]+keep[1][1]+keep[1][2]+keep[1][3]+keep[1][4]+keep[1][5]+keep[1][6];
+    	EDS131 = keep[2][0]+keep[2][1]+keep[2][2]+keep[2][3]+keep[2][4]+keep[2][5]+keep[2][6];
+    	EDS136 = keep[3][0]+keep[3][1]+keep[3][2]+keep[3][3]+keep[3][4]+keep[3][5]+keep[3][6];
+    	EDS137 = keep[4][0]+keep[4][1]+keep[4][2]+keep[4][3]+keep[4][4]+keep[4][5]+keep[4][6];
     }
     document.getElementById("result").innerHTML = "EDS130 = " + EDS130 +
                                                        "<br>" + "EDS131 = " + EDS131 +
@@ -69,18 +69,20 @@ function start(){
       document.getElementById("back").style.visibility = 'visible';
       //document.getElementById("results_comments").style.visibility = 'hidden';
       /* sets up numbers of questions and answers */
-    var q = ["q1","q2","q3","q4","q5","q6","q7"];
+    var q = ["q1","q2","q3","q4","q5","q6"];
     var a = ["a1","a2","a3","a4","a5","a6"];
-    var results_comments = ["2"];
+    var results_comments = ["q2"];
     /* Shows questions and answers one by one */
     /* Starts showing question 1 -> 7 */
-    for(index = 0; index < QUESTIONS; index++){
+    for(index = 0; index < 6; index++){
       document.getElementById(q[index]).style.visibility = 'visible';
-      document.getElementById(a[index]).style.visibility = 'visible';
+    }
+    for(index = 0; index < 6; index++){
+          document.getElementById(a[index]).style.visibility = 'visible';
     }
 
-    //document.getElementById(results_comments[0]).style.visibility = 'visible';
-    //document.getElementById("a6").innerHTML="Because you still need to take your DEI, EDS 130, 131, 136, 137 can cover it!";
+    document.getElementById(results_comments).innerHTML="Because you still need to take your DEI, EDS 130, 131, 136, 137 can cover it!";
+    document.getElementById(results_comments[0]).style.visibility = 'visible';
 
 
 
@@ -106,7 +108,6 @@ function start(){
     document.getElementById("q4").checked = false;
     document.getElementById("q5").checked = false;
     document.getElementById("q6").checked = false;
-    document.getElementById("q7").checked = false;
     /* --------------------------------------------------------------- */
 
 
@@ -230,7 +231,7 @@ function change(questionNumber){
                              _|         _|      _|    _|_|_|_|_|
      */
     /* CAN ADD/REMOVE ~QUESTIONS~ HERE */
-    var q = ["q1","q2","q3","q4","q5","q6", "q7"];
+    var q = ["q1","q2","q3","q4","q5","q6"];
     var a = ["a1","a2","a3","a4","a5","a6"];
     /* Holds question pictures, which can be found in the pics file */
     /* CAN ADD/REMOVE QUESTION PICTURES HERE */
@@ -808,7 +809,7 @@ function calculate(command){
 
 /* This is where results are shown */
 function finalpage(){
-    var q = ["q1","q2","q3","q4","q5","q6","q7"];
+    var q = ["q1","q2","q3","q4","q5","q6"];
     var a = ["a1","a2","a3","a4","a5","a6"];
       document.getElementById("pic").src = "pics/thankyou.jpg";
       document.getElementById("demo").style.visibility = 'hidden';
