@@ -123,7 +123,7 @@ function start(){
     document.getElementById("a2").innerHTML="Muir";
     document.getElementById("a3").innerHTML="Warren";
     document.getElementById("a4").innerHTML="Sixth";
-    document.getElementById("a5").innerHTML="Marshal";
+    document.getElementById("a5").innerHTML="Marshall";
     document.getElementById("a6").innerHTML="Revelle";
 
 }
@@ -165,7 +165,7 @@ function change(questionNumber){
                      "Of the subjects below, which do you enjoy the most?",
                      "What age group would you like to work with for these courses?",
                      "What kind of environment would you prefer?",
-                     "Are you a 1st or 2nd year?"
+                     "Are you an underclassman (freshman or sophomore)?"
                     ]; // end of question choices
 
     /* --------------------------------------------------------------- */
