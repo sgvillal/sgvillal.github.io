@@ -60,7 +60,6 @@
 
 }
 .quiz{
-  height: 20em;
   width: 100%;
   font-size: 48px;
   color: green; 
@@ -72,8 +71,8 @@
 
 .jumbotron h1 {
   color: #fff;
-  font-size: 48px;  
   font-family: LemonMilk;
+  font-size: 48px;
   font-weight: bold;
 }
 
