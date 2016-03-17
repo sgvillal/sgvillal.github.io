@@ -47,7 +47,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   font-family: SweetPea;
-  font-size: 24;
+  font-size: 32;
 }
 
 .jumbotron .container {
@@ -59,7 +59,7 @@
 .jumbotron h1 {
   color: #fff;
   font-family: Shorelines;
-  font-size: 52px;
+  font-size: 48px;
   font-weight: bold;
 }
 
