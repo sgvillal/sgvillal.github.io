@@ -89,16 +89,17 @@
   margin-bottom: 13px;
 }
 
-.course-guides .thumbnail {
-  position: relative;
-}
-
 .course-guides h3 {
   text-align: center;
+  position: absolute;
   color: #fff;
   font-size: 48px;  
   font-family: 'Shift', sans-serif;
   font-weight: bold;
+}
+
+.course-guides .thumbnail {
+  position: relative;
 }
 
 .copyright {
