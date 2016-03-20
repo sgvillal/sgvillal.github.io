@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<SCRIPT  id= "sorce" SRC="javas.js">
+document.getElementById('sorce').innerHTML = "";
+</SCRIPT>
+</script>
+</head>
+<style>
+
+@font-face { font-family: Adam; src: url('Fonts/Adam.otf'); }
+@font-face { font-family: BasicTitle; src: url('Fonts/basictitlefont.ttf'); }
+@font-face { font-family: FUTRFW; src: url('Fonts/FUTRFW.ttf'); }
+
+header{
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+    font-family: Adam;
+}
+nav{
+    line-height:30px;
+    background-color:#eeeeee;
+    height:100%;
+    width:100%;
+    padding:5px;
+}
+section{
+    width:90%;
+    height: 90%;
+    margin-left:40px;
+    color:white;
+    font-family: Adam;
+}
+footer{
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+    position: absolute;
+}
+button {
+  width: 40%;
+  padding: 15px 15px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #ffffff;
+  background-color: #EC4041;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px #999;
+}
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body style="background-color:#6CCCC0;">
+<header>
+
+<h1>PAL Class Selector</h1>
+</header>
+<section>
+<nav style ="float:left; margin:0 auto; margin-top:30px;width:20%;height:100%;padding:20px;border-radius:10px;border:10px solid #FDE6A9; font-size:150%;color:black;background-color: #E1F4E9;">
+ <p>Click here to see your results in advance<p><br>
+ <label id="result"></label><br>
+ <label id= "recomendation"></label><br>
+ <button type="button" onclick="check(0)">Result</button>
+ <br>
+ <br>
+ <button type="button" id="reset" onclick="start(this.value)" value = "1">Reset</button>
+</nav>
+<div style=" background-color: #007A7A;margin:0 auto;float:center; margin-top:30px;width:30%;height:100%;padding:20px;border-radius:10px;border:10px solid #FDE6A9;font-size:120%;">
+  <div class="container" style="height: 350px">
+    <img value="pal.jpg" src = "selector-pics/pal.jpg" style="max-height: 100%; max-width: 100%" id="pic"><br>
+  </div>
+<h3 id="demo">What college are you in?</h3>
+<form>
+<input type="radio" name="browser" id = "q1" onclick="changepic(this.value)" value ="1">
+<label for="choice1" id="a1">ERC</label><br>
+
+<input type="radio" name="browser" id = "q2" onclick="changepic(this.value)" value ="2">
+<label for="choice2" id="a2">Muir</label><br>
+
+<input type="radio" name="browser" id = "q3" onclick="changepic(this.value)" value ="3">
+<label for="choice3" id="a3">Warren</label><br>
+
+<input type="radio" name="browser" id = "q4" onclick="changepic(this.value)" value ="4">
+<label for="choice4" id="a4">Sixth</label><br>
+
+<input type="radio" name="browser" id = "q5" onclick="changepic(this.value)" value ="5">
+<label for="choice5" id="a5">Marshall</label><br>
+
+<input type="radio" name="browser" id = "q6" onclick="changepic(this.value)" value ="6">
+<label for="choice6" id="a6">Revelle</label><br>
+<br>
+<p id="result_comments">  </p>
+<button type="button" id="back"  onclick="change(this.value)" value = "1">Back</button>
+<button type="button" id="choice" onclick="change(0)"><span>Next</span></button>
+<br>
+</div>
+</section>
+
+
+</form>
+</body>
+</html>
+                  
+
